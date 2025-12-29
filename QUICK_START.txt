@@ -1,0 +1,209 @@
+================================================================================
+TASTS-2025 WEBSITE - QUICK START (2 MINUTE SETUP)
+================================================================================
+
+BEFORE YOU START:
+- Extract all TASTS-2025 files to a folder
+- Keep all files together (don't separate them)
+
+================================================================================
+OPTION A: EASIEST - XAMPP (Windows/Mac/Linux)
+================================================================================
+
+1. Download XAMPP: https://www.apachefriends.org/
+2. Install it (default settings OK)
+3. Copy TASTS-2025 folder to: xampp/htdocs/tasts2025/
+4. Open XAMPP Control Panel
+5. Click "Start" next to Apache
+6. Open browser and go to: http://localhost/tasts2025/
+
+DONE! Your website is live.
+
+================================================================================
+OPTION B: NO DOWNLOAD - PHP SERVER (Windows/Mac/Linux)
+================================================================================
+
+1. Open Terminal/Command Prompt
+2. Go to your TASTS-2025 folder (drag folder into terminal)
+3. Type: php -S localhost:8000
+4. Open browser and go to: http://localhost:8000/
+
+DONE! Your website is live.
+(Press Ctrl+C in terminal to stop)
+
+================================================================================
+OPTION C: LIVE ONLINE - HOSTING PROVIDER
+================================================================================
+
+1. Get hosting (GoDaddy, Bluehost, Hostinger, etc.)
+2. Upload TASTS-2025 files via FTP
+3. Go to your domain URL
+
+DONE! Your website is live online.
+
+================================================================================
+TESTING THE FORM
+================================================================================
+
+1. Scroll to "Secure Your Seat" section
+2. Fill in:
+   - Full Name: Test Name
+   - Email: your-email@gmail.com
+   - Phone: (optional)
+3. Click "Secure My Seat"
+4. Check your email for confirmation
+
+Email also goes to: faustineemmanuel0601@gmail.com
+
+================================================================================
+NEED TO CHANGE THE EMAIL?
+================================================================================
+
+1. Open: config.php
+2. Find: define('RECIPIENT_EMAIL', 'faustineemmanuel0601@gmail.com');
+3. Change email address
+4. Save and refresh website
+
+================================================================================
+WEBSITE SECTIONS
+================================================================================
+
+✓ Hero - Event announcement
+✓ About - Summit overview
+✓ Speakers - 7 speaker profiles with bios
+✓ Registration Steps - 4-step guide
+✓ Activities - Safari, Day Trips, Community, Adventure Sports
+✓ Registration Form - Email integration
+✓ Mobile Menu - Works on all devices
+
+================================================================================
+FILE STRUCTURE
+================================================================================
+
+tasts2025/
+├── index.php                      Main website
+├── config.php                     Email settings
+├── submit_registration.php        Form handler
+├── public/
+│   ├── css/style.css             Styling
+│   ├── js/script.js              Features
+│   └── images/logo.jpg           Logo
+└── INSTALLATION_GUIDE.md          Full setup guide
+
+================================================================================
+COMMON ISSUES
+================================================================================
+
+"Page won't load"
+→ Make sure PHP is running (XAMPP Apache or php -S)
+→ Check that all files are in the correct folder
+
+"Form doesn't work"
+→ Make sure submit_registration.php is in root folder
+→ Check browser console for errors (F12)
+
+"Emails not sending"
+→ Check email address in config.php
+→ On XAMPP: May need to set up SMTP
+→ Check logs/error.log for details
+
+"Styling looks wrong"
+→ Clear browser cache (Ctrl+Shift+Delete)
+→ Refresh page (Ctrl+F5)
+
+================================================================================
+WHAT'S INCLUDED
+================================================================================
+
+✓ Complete website for TASTS-2025 summit
+✓ 7 Speaker profiles with detailed information
+✓ 4 Post-event activity types
+✓ Working registration form
+✓ Email notifications
+✓ Mobile responsive design
+✓ Smooth animations
+✓ Professional styling
+
+================================================================================
+SPEAKER INFORMATION INCLUDED
+================================================================================
+
+1. Dr. Minja, Gileard Sifuel (Keynote)
+   - Lecturer, Research Scientist, Consultant
+   - PhD in Environmental Studies
+
+2. Prof. Dr. Mkonda, Msafiri
+   - Waste Management and Circular Economy
+   - Associate Professor
+
+3. Mrs. Gillies, Dawn Adam
+   - Yoga Expert
+   - Health and Wellness
+
+4. Mr. Kagomba, Saul Samwel
+   - Disaster Risk Management
+   - Safety Expert
+
+5. Dr. Mayala, Nyanjige
+   - Senior Lecturer
+   - Economics and Business Studies
+
+6. Mrs. Redondo, Mayte Castuera
+   - Sustainability Expert
+   - CEO, Travel 2 Care
+
+7. Mrs. Smits, Samantha
+   - Sustainability Expert
+   - Business Transformation
+
+================================================================================
+ACTIVITIES INCLUDED
+================================================================================
+
+Safari Adventures
+- Guided wildlife tours
+- Serengeti experience
+- Expert guides
+
+Scenic Day Trips
+- Chala Lake
+- Materuni Waterfalls
+- Kilimanjaro views
+
+Community Tours
+- Cultural experiences
+- Local markets
+- Farm-to-table dining
+
+Adventure Sports
+- Kilimanjaro trekking
+- Rock climbing
+- Paragliding
+
+================================================================================
+REQUIREMENTS
+================================================================================
+
+✓ PHP 7.4 or higher
+✓ Web browser (Chrome, Firefox, Safari, Edge)
+✓ For local testing: XAMPP or PHP installed
+✓ For live: Hosting with PHP support
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+1. Choose installation method (XAMPP recommended for beginners)
+2. Follow steps above
+3. Test the website locally
+4. Customize email in config.php (optional)
+5. Deploy to live server (optional)
+6. Share link with attendees
+
+================================================================================
+VERSION: 1.0
+DATE: December 2024
+EVENT: TASTS-2025 Summit
+================================================================================
+
+Need more help? Read INSTALLATION_GUIDE.md or COMPLETE_DEPLOYMENT_GUIDE.md
