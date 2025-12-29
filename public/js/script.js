@@ -114,7 +114,7 @@ registrationForm.addEventListener('submit', async (e) => {
     btnLoader.style.display = 'inline';
     
     try {
-        const response = await fetch('submit_registration.php', {
+        const response = await fetch('/submit_registration', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

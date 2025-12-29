@@ -1,0 +1,104 @@
+Sustainable Tourism Tanzania (STTZ) Website
+A professional, responsive website for Sustainable Tourism Tanzania built with PHP, MySQL, CSS, and JavaScript.
+
+Features
+Fully Responsive Design - Optimized for mobile, tablet, and desktop devices
+Professional Color Scheme - Green and blue tones matching the STTZ logo
+Contact Form - Sends emails to info@sttz.org and stores in MySQL database
+Smooth Animations - Scroll effects, fade-ins, and hover transitions
+SEO Optimized - Meta tags, semantic HTML, and performance optimization
+XAMPP Compatible - Ready to run on local XAMPP environment
+Project Structure
+├── config/
+│   ├── database.php      # Database configuration
+│   └── email.php         # Email configuration
+├── includes/
+│   ├── header.php        # Header template
+│   └── footer.php        # Footer template
+├── css/
+│   └── style.css         # Main stylesheet
+├── js/
+│   └── main.js          # JavaScript functionality
+├── images/              # Image assets
+├── index.php            # Homepage
+├── trainings.php        # Trainings page
+├── projects.php         # Projects page
+├── events.php           # Events page
+├── focus-areas.php      # Focus areas page
+├── contact.php          # Contact page with form
+├── setup-database.php   # Database setup script
+└── .htaccess           # Apache configuration
+Installation for XAMPP
+Copy files to XAMPP htdocs folder:
+
+Copy all files to: C:\xampp\htdocs\sttz\
+Start XAMPP:
+
+Start Apache
+Start MySQL
+Setup Database:
+
+Visit: http://localhost/sttz/setup-database.php
+This will create the database and tables automatically
+Access the Website:
+
+Homepage: http://localhost/sttz/
+Contact Form: http://localhost/sttz/contact.php
+Database Configuration
+The website uses MySQL database with the following default settings:
+
+Host: localhost
+Username: root
+Password: (empty)
+Database Name: sttz_website
+You can modify these settings in config/database.php
+
+Email Configuration
+Contact form submissions are:
+
+Saved to MySQL database (contact_submissions table)
+Sent via email to info@sttz.org
+To configure email settings, edit config/email.php
+
+Pages
+Homepage (index.php) - Hero slider, overview, events, projects, trainings, testimonials
+Trainings (trainings.php) - Training programs and courses
+Projects (projects.php) - Ongoing and upcoming projects
+Events (events.php) - Hosted events and workshops
+Focus Areas (focus-areas.php) - Consultation services
+Contact (contact.php) - Contact form and information
+Color Scheme
+Primary Green: #2d7a3e
+Secondary Blue: #3b5998
+Accent Green: #4caf50
+Accent Blue: #5a7fc7
+Technologies Used
+Backend: PHP 8.3
+Database: MySQL
+Frontend: HTML5, CSS3, JavaScript
+Fonts: Poppins, Montserrat (Google Fonts)
+Icons: Font Awesome 6.4.0
+Browser Compatibility
+Chrome (latest)
+Firefox (latest)
+Safari (latest)
+Edge (latest)
+Performance Optimization
+Optimized images
+CSS/JS minification ready
+Browser caching enabled
+Gzip compression
+Lazy loading for images
+Security Features
+SQL injection protection (prepared statements)
+XSS protection
+CSRF protection ready
+Input validation
+Secure headers
+Support
+For support or questions, contact:
+
+Email: info@sttz.org
+Phone: +255 744 812 556
+License
+© 2025 STTZ. All rights reserved. Designed & Developed by STTZ IT-Unit
