@@ -1,0 +1,153 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║        TASTS-2025 SUMMIT WEBSITE - QUICK SETUP GUIDE                      ║
+║        PHP + HTML + CSS + JavaScript Version                              ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+WHAT YOU HAVE:
+==============
+✓ Complete PHP website with working registration form
+✓ Professional design matching STTZ logo colors
+✓ 7 speaker profiles with bios
+✓ 4 activity types with Moshi day trip details
+✓ Email confirmation system
+✓ Mobile-responsive design
+✓ All content included
+
+
+QUICK START (3 EASY STEPS):
+==========================
+
+STEP 1: Download & Install XAMPP
+   → Go to: https://www.apachefriends.org/
+   → Download XAMPP for your system (Windows/Mac/Linux)
+   → Run installer and follow prompts
+   → Remember installation location!
+
+STEP 2: Copy Website Files
+   → Find XAMPP htdocs folder:
+      Windows: C:\xampp\htdocs
+      Mac:     /Applications/XAMPP/htdocs
+      Linux:   /opt/lampp/htdocs
+   
+   → Create new folder: "tasts2025"
+   → Copy ALL website files into this folder
+   
+   Files to copy:
+   - index.php
+   - config/ (folder with settings.php, functions.php)
+   - pages/ (folder with register.php)
+   - includes/ (folder with header.php, footer.php)
+   - assets/ (folder with css/ and js/ subfolders)
+
+STEP 3: Start XAMPP & Visit Website
+   → Open XAMPP Control Panel
+   → Click "Start" next to Apache
+   → Open browser and go to: http://localhost/tasts2025/
+   → Done! Website is live!
+
+
+FILE STRUCTURE:
+===============
+tasts2025/
+├── index.php (main page - displays everything)
+├── config/settings.php (email, date, location config)
+├── config/functions.php (speaker & activity data)
+├── pages/register.php (form processor)
+├── includes/header.php (navigation)
+├── includes/footer.php (footer)
+├── assets/css/style.css (all styling)
+├── assets/js/script.js (interactivity)
+└── logs/ (registrations saved here)
+
+
+KEY FEATURES:
+=============
+Hero Section: Meaningful message about sustainable tourism
+Speakers: 7 detailed profiles with bios you can expand
+Activities: 4 types with specific Moshi day trips
+Registration: Working form with email confirmation
+Design: STTZ logo colors (green #2d7a3e & blue #3b5998)
+
+
+CUSTOMIZE IT:
+=============
+Change Email:
+   → Edit config/settings.php
+   → Change RECIPIENT_EMAIL to your email
+
+Change Date/Location:
+   → Edit config/settings.php
+   → Update EVENT_DATE and EVENT_LOCATION
+
+Add Speakers:
+   → Edit config/functions.php
+   → Add new speaker in getSpeakers() function
+
+Change Colors:
+   → Edit assets/css/style.css
+   → Modify :root CSS variables
+
+
+TEST THE FORM:
+==============
+1. Go to http://localhost/tasts2025/
+2. Scroll to "Secure Your Seat" section
+3. Fill in form with test data
+4. Click "Secure My Seat"
+5. Check logs/registrations.log for the record
+
+
+TROUBLESHOOTING:
+================
+Website not loading?
+   → Check if Apache is running in XAMPP Control Panel
+   → URL should be http://localhost/tasts2025/ (exact match)
+
+Form not submitting?
+   → Press F12 to open Developer Tools
+   → Check Console tab for error messages
+   → Check that logs/ folder exists
+
+Colors look different?
+   → Clear browser cache (Ctrl+Shift+Delete)
+   → Try different browser to test
+
+Emails not sending?
+   → Check logs/registrations.log (data is saved there)
+   → XAMPP logs emails locally by default
+   → For production, configure mail service
+
+
+DEPLOY TO LIVE SERVER:
+======================
+1. Upload all files via FTP to your web host
+2. Update config/settings.php with your live URL
+3. Create logs/ folder with 755 permissions
+4. Test registration form
+5. Configure mail service with your hosting provider
+
+
+IMPORTANT FILES:
+================
+index.php            → Main page (opens here first)
+config/settings.php  → Change email, date, location
+config/functions.php → Edit speaker & activity data
+assets/css/style.css → Modify colors & styling
+assets/js/script.js  → Interactive features
+
+
+SUPPORT DOCUMENTS:
+==================
+- XAMPP_INSTALLATION_GUIDE.md  (detailed setup)
+- README_PHP_WEBSITE.md         (technical overview)
+- This file (QUICK_SETUP.txt)
+
+
+YOU'RE READY!
+=============
+Your website is complete and ready to use. Install XAMPP, copy files,
+start Apache, and visit http://localhost/tasts2025/
+
+Questions? Check the detailed guides in the package.
+
+© 2025 TASTS-2025 Summit
