@@ -1,9 +1,9 @@
 /* ========================================
-   TASTS-2025 SUMMIT - PREMIUM DESIGN V3
-   Enhanced Contrast & Accessibility
+   TASTS-2025 SUMMIT - PREMIUM DESIGN V4
+   Enhanced Contrast, Accessibility & Typography
    ======================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 * {
     margin: 0;
@@ -21,7 +21,7 @@
     --white: #ffffff;
     --gray: #475569;
     --border: #cbd5e1;
-    --hero-overlay: rgba(15, 23, 42, 0.7);
+    --hero-overlay: rgba(15, 23, 42, 0.75);
 }
 
 html {
@@ -29,16 +29,18 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: var(--dark);
     background: var(--white);
-    line-height: 1.6;
+    line-height: 1.7;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
     line-height: 1.2;
+    color: var(--dark);
 }
 
 /* ========== ANIMATIONS ========== */
