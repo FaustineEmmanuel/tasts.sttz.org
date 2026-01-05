@@ -541,61 +541,135 @@ p {
     color: var(--primary);
 }
 
-/* ========== REGISTRATION FORM ========== */
+/* ========== REGISTRATION SECTION ========== */
 .register {
-    background: var(--light);
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.register-card {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.register-info {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    padding: 60px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.register-info::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.register-info h3 {
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: white;
+}
+
+.register-info p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.benefit-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .register-container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: white;
-    padding: 50px;
-    border-radius: 12px;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+    padding: 60px;
+    position: relative;
 }
 
 .form-group {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 }
 
 .form-group label {
     display: block;
     font-weight: 700;
-    margin-bottom: 10px;
-    color: var(--dark);
+    margin-bottom: 8px;
+    color: #334155;
+    font-size: 14px;
 }
 
 .form-group input {
     width: 100%;
-    padding: 15px;
-    border: 2px solid var(--border);
-    border-radius: 8px;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
+    padding: 14px 18px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background: #f8fafc;
 }
 
 .form-group input:focus {
     outline: none;
     border-color: var(--primary);
+    background: white;
+    box-shadow: 0 0 0 4px rgba(45, 122, 62, 0.1);
 }
 
 .submit-btn {
     width: 100%;
-    padding: 18px;
-    background: var(--primary);
+    padding: 16px;
+    background: var(--accent);
     color: white;
     border: none;
-    border-radius: 8px;
-    font-size: 18px;
+    border-radius: 12px;
+    font-size: 17px;
     font-weight: 800;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 15px -3px rgba(255, 107, 53, 0.3);
 }
 
 .submit-btn:hover {
-    background: var(--secondary);
-    transform: scale(1.02);
+    background: #e85a24;
+    transform: translateY(-2px);
+    box-shadow: 0 20px 25px -5px rgba(255, 107, 53, 0.4);
+}
+
+@media (max-width: 992px) {
+    .register-card {
+        grid-template-columns: 1fr;
+    }
+    .register-info {
+        padding: 40px;
+    }
+    .register-container {
+        padding: 40px;
+    }
 }
 
 .error-message {
