@@ -556,12 +556,35 @@ p {
     gap: 40px;
 }
 
+.activity-img-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.activity-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.activity-card:hover .activity-img-container img {
+    transform: scale(1.1);
+}
+
 .activity-card {
     background: white;
     border-radius: 12px;
-    padding: 40px;
+    overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     border: 1px solid var(--border);
+    transition: all 0.3s ease;
+}
+
+.activity-content {
+    padding: 30px;
 }
 
 .activity-icon {
