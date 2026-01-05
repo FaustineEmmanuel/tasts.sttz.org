@@ -326,6 +326,20 @@ p {
     z-index: 1;
 }
 
+@media (max-width: 768px) {
+    .about-card {
+        padding: 40px 20px;
+    }
+    
+    .about-highlight {
+        padding: 30px 20px;
+    }
+    
+    .benefits-list-new {
+        grid-template-columns: 1fr;
+    }
+}
+
 .about-header {
     text-align: center;
     max-width: 800px;
@@ -378,6 +392,15 @@ p {
     color: var(--secondary);
     font-size: 24px;
     margin-bottom: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 480px) {
+    .about-highlight h4 {
+        font-size: 20px;
+        line-height: 1.2;
+    }
 }
 
 .benefits-list-new {
