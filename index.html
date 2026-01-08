@@ -314,23 +314,35 @@
                 </div>
 
                 <div class="register-container">
-                    <div id="successMessage" class="success-message">Successfully Registered!</div>
-                    <form id="registrationForm">
+                    <div id="successMessage" class="success-message" style="display:none;">
+                        Successfully Registered!
+                    </div>
+
+                    <form id="registrationForm" action="send_mail.php" method="POST">
                         <div class="form-group">
                             <label for="fullName">Full Name</label>
-                            <input type="text" id="fullName" placeholder="Enter your full name" required>
+                            <input type="text" id="fullName" name="fullName"
+                                placeholder="Enter your full name" required>
                         </div>
+
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" placeholder="Enter your email" required>
+                            <input type="email" id="email" name="email"
+                                placeholder="Enter your email" required>
                         </div>
+
                         <div class="form-group">
                             <label for="phone">Phone Number (Optional)</label>
-                            <input type="tel" id="phone" placeholder="Enter your phone number">
+                            <input type="tel" id="phone" name="phone"
+                                placeholder="Enter your phone number">
                         </div>
-                        <button type="submit" class="submit-btn" id="submitBtn">Register Now</button>
+
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            Register Now
+                        </button>
                     </form>
                 </div>
+
             </div>
         </div>
     </section>
